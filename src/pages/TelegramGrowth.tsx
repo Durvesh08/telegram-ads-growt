@@ -67,8 +67,7 @@ const Navbar = () => {
           <a href="#services" className={`text-sm font-medium ${theme.textSecondary} hover:text-white transition-colors`}>Services</a>
           <a href="#how-it-works" className={`text-sm font-medium ${theme.textSecondary} hover:text-white transition-colors`}>How It Works</a>
           <a href="#showcase" className={`text-sm font-medium ${theme.textSecondary} hover:text-white transition-colors`}>Growth Showcase</a>
-          <a href="#founder" className={`text-sm font-medium ${theme.textSecondary} hover:text-white transition-colors`}>Founder</a>
-          <a href="https://t.me/+3iPrSB-aHp8yOTVl" target="_blank" rel="noreferrer" className="h-10 px-5 flex items-center justify-center rounded-full text-sm font-semibold text-white border transition-all duration-300 gap-2 hover:opacity-90" style={{ backgroundColor: '#1d4ed8', borderColor: '#3b82f6' }}>
+          <a href="https://telegram.me/+3iPrSB-aHp8yOTVl" target="_blank" rel="noreferrer" className="h-10 px-5 flex items-center justify-center rounded-full text-sm font-semibold text-white border transition-all duration-300 gap-2 hover:opacity-90" style={{ backgroundColor: '#1d4ed8', borderColor: '#3b82f6' }}>
             <Send size={14} /> Join Telegram
           </a>
         </div>
@@ -89,8 +88,7 @@ const Navbar = () => {
              <a href="#services" onClick={() => setMobileMenuOpen(false)} className={`${theme.textSecondary} text-sm`}>Services</a>
              <a href="#how-it-works" onClick={() => setMobileMenuOpen(false)} className={`${theme.textSecondary} text-sm`}>How It Works</a>
              <a href="#showcase" onClick={() => setMobileMenuOpen(false)} className={`${theme.textSecondary} text-sm`}>Growth Showcase</a>
-             <a href="#founder" onClick={() => setMobileMenuOpen(false)} className={`${theme.textSecondary} text-sm`}>Founder</a>
-             <a href="https://t.me/+3iPrSB-aHp8yOTVl" target="_blank" rel="noreferrer" className="mt-2 h-12 w-full flex items-center justify-center rounded-xl text-sm font-semibold text-white border gap-2 hover:opacity-90" style={{ backgroundColor: '#1d4ed8', borderColor: '#3b82f6' }}>
+             <a href="https://telegram.me/+3iPrSB-aHp8yOTVl" target="_blank" rel="noreferrer" className="mt-2 h-12 w-full flex items-center justify-center rounded-xl text-sm font-semibold text-white border gap-2 hover:opacity-90" style={{ backgroundColor: '#1d4ed8', borderColor: '#3b82f6' }}>
               <Send size={16} /> Join Telegram
             </a>
           </motion.div>
@@ -189,7 +187,7 @@ const Hero = () => (
             </p>
           </motion.div>
           <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <a href="https://t.me/+3iPrSB-aHp8yOTVl" target="_blank" rel="noreferrer" className="h-14 px-8 rounded-xl flex items-center justify-center gap-2 text-base font-semibold text-white border shadow-[0_0_30px_rgba(29,78,216,0.3)] hover:shadow-[0_0_40px_rgba(29,78,216,0.5)] hover:-translate-y-1 transition-all duration-300" style={{ backgroundColor: '#1d4ed8', borderColor: '#3b82f6' }}>
+            <a href="https://telegram.me/+3iPrSB-aHp8yOTVl" target="_blank" rel="noreferrer" className="h-14 px-8 rounded-xl flex items-center justify-center gap-2 text-base font-semibold text-white border shadow-[0_0_30px_rgba(29,78,216,0.3)] hover:shadow-[0_0_40px_rgba(29,78,216,0.5)] hover:-translate-y-1 transition-all duration-300" style={{ backgroundColor: '#1d4ed8', borderColor: '#3b82f6' }}>
               <Send size={18} /> Join Our Telegram Channel
             </a>
             <a href="https://wa.me/message/L57WFGNUE3J7A1" target="_blank" rel="noreferrer" className="h-14 px-8 rounded-xl flex items-center justify-center gap-2 text-base font-medium text-white border hover:-translate-y-1 shadow-[0_0_30px_rgba(4,120,87,0.2)] transition-all duration-300" style={{ backgroundColor: '#047857', borderColor: '#10b981' }}>
@@ -401,41 +399,7 @@ const ShowcaseSection = () => {
   );
 };
 
-const FounderSection = () => (
-  <section id="founder" className={`py-32 relative ${theme.bg}`}>
-    <div className="max-w-5xl mx-auto px-6 relative z-10">
-      <motion.div 
-        initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
-        className={`p-10 md:p-16 rounded-3xl ${theme.card} border border-[rgba(255,255,255,0.1)] relative overflow-hidden flex flex-col md:flex-row gap-12 items-center backdrop-blur-md`}
-      >
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#229ED9] rounded-full mix-blend-screen filter blur-[100px] opacity-20 pointer-events-none" />
-        
-        <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl border border-[rgba(255,255,255,0.1)] overflow-hidden shrink-0 bg-[#0C1222] relative group">
-           <img src="/founder.jpg" alt="Founder" className="w-full h-full object-cover opacity-100 transition-all duration-700" />
-           <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-transparent to-transparent pointer-events-none" />
-        </div>
-
-        <div className="flex-1 text-center md:text-left relative z-10">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.1)] text-xs font-medium text-[#94A3B8] mb-4">
-            Founder — Ads TG Growth 📈
-          </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-['Poppins',sans-serif]">Raushan Pratap Yadav</h2>
-          <p className={`${theme.textSecondary} text-lg mb-8 leading-relaxed`}>
-            Helping Telegram creators and communities scale faster through intelligent paid advertising and growth systems. Eliminate bot growth and build a community that converts.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a href="https://t.me/+3iPrSB-aHp8yOTVl" target="_blank" rel="noreferrer" className="h-12 px-6 rounded-xl flex items-center justify-center gap-2 text-sm font-semibold text-white border hover:-translate-y-1 transition-all hover:opacity-90" style={{ backgroundColor: '#1d4ed8', borderColor: '#3b82f6' }}>
-              <Send size={16} /> Join Telegram
-            </a>
-            <a href="https://wa.me/message/L57WFGNUE3J7A1" target="_blank" rel="noreferrer" className="h-12 px-6 rounded-xl flex items-center justify-center gap-2 text-sm font-medium text-white border hover:-translate-y-1 transition-all hover:opacity-90" style={{ backgroundColor: '#047857', borderColor: '#10b981' }}>
-              <WhatsAppIcon /> WhatsApp
-            </a>
-          </div>
-        </div>
-      </motion.div>
-    </div>
-  </section>
-);
+// Founder section removed
 
 const FinalCTA = () => (
   <section className="py-32 relative overflow-hidden border-t border-[rgba(255,255,255,0.05)] bg-[#040611]">
@@ -453,7 +417,7 @@ const FinalCTA = () => (
           Join our Telegram community and discover how paid advertising can consistently bring high-quality members to your channel.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <a href="https://t.me/+3iPrSB-aHp8yOTVl" target="_blank" rel="noreferrer" className="h-14 md:h-16 px-8 md:px-10 rounded-2xl flex items-center justify-center gap-2 text-base md:text-lg font-bold text-white border shadow-[0_0_40px_rgba(29,78,216,0.4)] hover:shadow-[0_0_60px_rgba(29,78,216,0.6)] hover:-translate-y-1 transition-all duration-300" style={{ backgroundColor: '#1d4ed8', borderColor: '#3b82f6' }}>
+          <a href="https://telegram.me/+3iPrSB-aHp8yOTVl" target="_blank" rel="noreferrer" className="h-14 md:h-16 px-8 md:px-10 rounded-2xl flex items-center justify-center gap-2 text-base md:text-lg font-bold text-white border shadow-[0_0_40px_rgba(29,78,216,0.4)] hover:shadow-[0_0_60px_rgba(29,78,216,0.6)] hover:-translate-y-1 transition-all duration-300" style={{ backgroundColor: '#1d4ed8', borderColor: '#3b82f6' }}>
             <Send size={20} /> Join Telegram
           </a>
           <a href="https://wa.me/message/L57WFGNUE3J7A1" target="_blank" rel="noreferrer" className="h-14 md:h-16 px-8 md:px-10 rounded-2xl flex items-center justify-center gap-2 text-base md:text-lg font-medium text-white border hover:-translate-y-1 shadow-[0_0_40px_rgba(4,120,87,0.2)] hover:shadow-[0_0_60px_rgba(4,120,87,0.4)] transition-all duration-300" style={{ backgroundColor: '#047857', borderColor: '#10b981' }}>
@@ -497,12 +461,12 @@ export default function TelegramGrowth() {
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '2043977229798979');
+      fbq('init', '1353796422884940');
       fbq('track', 'PageView');
     `;
     document.head.appendChild(script);
     const noscript = document.createElement('noscript');
-    noscript.innerHTML = '<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2043977229798979&ev=PageView&noscript=1" />';
+    noscript.innerHTML = '<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1353796422884940&ev=PageView&noscript=1" />';
     document.body.appendChild(noscript);
     return () => {
       if (document.head.contains(script)) document.head.removeChild(script);
@@ -519,7 +483,6 @@ export default function TelegramGrowth() {
       <ComparisonSection />
       <ProcessSection />
       <ShowcaseSection />
-      <FounderSection />
       <FinalCTA />
       <Footer />
     </div>
