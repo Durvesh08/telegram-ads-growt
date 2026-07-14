@@ -14,9 +14,7 @@ function App() {
       <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
           <CursorSpotlight />
-          <Switch>
-            <Route path="/:rest*" component={TelegramGrowth} />
-          </Switch>
+          <TelegramGrowth />
           <FloatingWhatsApp />
         </WouterRouter>
         <Toaster />
